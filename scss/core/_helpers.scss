@@ -56,6 +56,14 @@
     border-bottom: thin solid #ccc;
     padding-bottom: var(--space-md);
 }
+.card-header {
+    background-color: var(--c-white);
+    color: var(--c-orange);
+  }
+  
+  .card-m {
+    max-width: 25rem;
+  }
 
 .bg {
 
