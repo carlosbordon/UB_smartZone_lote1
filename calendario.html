@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitat de Barcelona</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
+    <!-- App Styles -->
+    <link href="src/assets/css/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="src/assets/css/styles.min.css.map" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="sticky">
+
+        <header id="appHeader" role="banner" class="app_header container-fluid ruler_bottom ruler_accent sticky ">
+            <div class="app_header--container container">
+
+                <div class="app_header--item app_header--left">
+                    <a href="#" class="app_header--logo">
+                        <img src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
+                            title="Logo Universitat de Barcelona" alt="Logo Universitat de Barcelona">
+                    </a>
+                </div>
+
+                <div class="app_header--item app_header--right">
+
+                    <ul class="app_header--links">
+                        <li class="app_header--link">
+                            <div class="dropdown select_lang">
+                                <button class="select_lang--button dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    CA <i data-feather="chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#" title="Español">ES</a></li>
+                                    <li><a class="dropdown-item" href="#" title="English">EN</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="app_header--content">
+                        <h2 class="app_header--title">
+                            Guía Académica </h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="appNav" class="app_nav container-fluid">
+            <div class="container app_nav--content">
+                <span class="bold">FACULTAD DE ECONOMIA Y EMPRESA</span>
+                <span role="heading">Curso 2022/2023</span>
+            </div>
+        </nav>
+
+    </div>
+
+    <main id="appMain" class="app_main">
+        <div class="container">
+            <h2 class="bold">
+                Grado en Ciencias ambientales
+            </h2>
+            <h4 class="mt-4 mb-4">
+                Calendario de exámenes
+            </h4>
+        </div>
+        <div class="box--selects">
+            <div class="container flex">
+                <div class="dropdown select_lang">
+                    <button class="select_lang--button dropdown-toggle mt-4 " type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Enero <i data-feather="chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" title="English">Enero</a></li>
+                        <li><a class="dropdown-item" href="#" title="English">Febrero</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown select_lang">
+                    <button class="select_lang--button dropdown-toggle mt-4 ms-4" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Primer curso <i data-feather="chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" title="English">Primer curso</a></li>
+                        <li><a class="dropdown-item" href="#" title="English">Segundo curso</a></li>
+                        <li><a class="dropdown-item" href="#" title="English">Tercer curso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="list">
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><div id="minus" class="minus"><i data-feather="minus"
+                        onclick="openDetailCalendar()"></i></div><div id="plus" class="plus"><i data-feather="plus"  onclick="openDetailCalendar()"></i></div> 05 Enero 2023</h4>
+                </li>
+                <div class="list--detail hidden" id="detailCalendar">
+
+                    <table class="table--full mt-4 hidden-mobile">
+                        <tr>
+                            <th>Asignatura</th>
+                            <th>Horario</th>
+                            <th>A1</th>
+                            <th>Aula</th>
+                            <th>Observaciones</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td class="bold">Evaluación del impacto ambiental(1)</td>
+                            <td>08:00-10:00</td>
+                            <td>Primero</td>
+                            <td class="underline">B35</td>
+                            <td>Grups cT1 i cT2 discussió dades sortida de camp</td>
+                            <td class="text-center"><button class="button--orange">Ficha</button></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Química General(1)</td>
+                            <td>13:00-15:00</td>
+                            <td>B7</td>
+                            <td class="underline">M3</td>
+                            <td></td>
+                            <td class="text-center"><button class="button--orange">Ficha</button></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Fisiología vegetal animal(1)</td>
+                            <td>18:00-19:00</td>
+                            <td>B35</td>
+                            <td class="underline">Z4</td>
+                            <td>Grups cT1 i cT2 discussió dades sortida de camp</td>
+                            <td class="text-center"><button class="button--orange">Ficha</button></td>
+                        </tr>
+                    </table>
+
+                    <div class="hidden-web">
+                        <div class="box--calendar border mt-3 " onclick="openDetailMobileCalendar()">
+                            <h4 class="mt-3 ms-3 bold" >Evaluación del impacto ambiental(1)</h4>
+                        </div>
+                        <div class="box--calendar--detail border hidden" id="detailMobileCalendar">
+                            <div class="mt-3 ms-3 mb-3 me-3">
+                            <h5>Tipo</h5>
+                            <h6>Formacion básica</h6>
+                            <h5>semestres</h5>
+                            <h6>Primero</h6>
+                            <h5>Creditos</h5>
+                            <h6>6</h6> 
+                            <button class="button--orange">Ficha</button>
+                        </div>
+                        </div>
+                        <div class="box--calendar border" >
+                            <h4 class="mt-4 ms-3 bold" >Química General(1)</h4>
+                        </div>
+                        <div class="box--calendar border" >
+                            <h4 class="mt-4 ms-3 bold" >Fisiología vegetal animal(1)</h4>
+                        </div>
+                    </div>
+                </div>
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                            id="minus" class="minus" onclick="openDetail()"></i> 07 Enero 2023</h4>
+                </li>
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                            id="minus" class="minus" onclick="openDetail()"></i> 10 Enero 2023</h4>
+                </li>
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                            id="minus" class="minus" onclick="openDetail()"></i> 13 Enero 2023</h4>
+                </li>
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                            id="minus" class="minus" onclick="openDetail()"></i> 15 Enero 2023</h4>
+                </li>
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                            id="minus" class="minus" onclick="openDetail()"></i> 20 Enero 2023</h4>
+                </li>
+                <li class="ruler_bottom--small ruler_accent">
+                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                            id="minus" class="minus" onclick="openDetail()"></i> 25 Enero 2023</h4>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+
+    <footer class="app_footer container-fluid">
+        <div class="container app_footer--container">
+            <div class="app_footer--left">
+                <img class="app_footer--logo"
+                    src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
+                    title="Logo Universitat de Barcelona" alt="Logo Universitat de Barcelona">
+
+            </div>
+            <div class="app_footer--center">
+                <ul class="app_footer--links">
+                    <li><a href="#" target="_blank">Aviso legal</a></li>
+                    <li><a href="#" target="_blank">Política de cookies</a></li>
+                    <li><a href="#" target="_blank">Contacto</a></li>
+                </ul>
+            </div>
+            <div>Universidad de Barcelona</div>
+        </div>
+    </footer>
+    <div class="app_footer--info">Area de Tecnologias de la Información y la comunicación - Aplicaciones - Proyectos de gestión académica</div>
+
+    <button onclick="topFunction()" id="toTop" title="subir" class="totop"><i data-feather="chevron-up"></i></button>
+
+
+</body>
+
+<!-- App JS -->
+<script src="src/assets/js/app.js"></script>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+<script>
+    feather.replace()
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+.app_nav {
+    padding: var(--space-md) 0;
+    border-bottom: thin solid var(--c-grey-light);
+
+    &--content {
+        padding-left: 20%;
+        padding-right: var(--space-xl);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between
+    }
+
+    @media (max-width:578px){
+        .app_nav--content{
+          display: flex;
+          flex-flow: row;
+          padding-left: 20px;
+          padding-right: 0px !important;
+        }
+        &--text--rigth {
+          padding-left: 30px;
+      }
+      }
+ 
+}
