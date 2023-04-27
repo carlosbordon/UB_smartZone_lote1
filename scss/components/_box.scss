@@ -97,6 +97,10 @@
         }
     }
 
+    &--info{
+        border-color: var(--c-accent);
+    }
+    
     &--fichaDetail {
         display: none;
         border: solid 1px var(--c-grey-light);

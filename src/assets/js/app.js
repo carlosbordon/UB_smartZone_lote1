@@ -1,4 +1,27 @@
-
+//VARIABLES
+let screenWidth = screen.width
+let detail = document.getElementById("detail");
+let detailCalendar = document.getElementById("detailCalendar");
+let plus = document.getElementById("plus");
+let minus = document.getElementById("minus");
+let detailMobile = document.getElementById("detailMobile");
+let detailMobileCalendar = document.getElementById("detailMobileCalendar");
+let listMobile = document.getElementById("listMobile");
+let fichaDetail = document.getElementById("fichaDetail");
+let index_title = document.getElementById('index-title');
+let index_dropdown = document.getElementById('index-dropdown');
+let anchor1 = document.getElementById('anchor-mobile1');
+let anchor2 = document.getElementById('anchor-mobile2');
+let objetivos_desktop = document.getElementById('Objetivos_desktop');
+let objetivos_mobile = document.getElementById('Objetivos_mobile');
+let teorico_practica = document.getElementById('teorico-practica');
+let t_grupos = document.getElementById('t-grupos');
+let trabajo = document.getElementById('trabajo');
+let aprendizaje = document.getElementById('aprendizaje');
+aprendizaje.style.display = "none";
+trabajo.style.display = "none";
+teorico_practica.style.display = "none";
+t_grupos.style.display = "none";
 // Hide Header on on scroll down
 
 var prevScrollpos = window.pageYOffset;
@@ -32,15 +55,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-let screenWidth = screen.width
-let detail = document.getElementById("detail");
-let detailCalendar = document.getElementById("detailCalendar");
-let plus = document.getElementById("plus");
-let minus = document.getElementById("minus");
-let detailMobile = document.getElementById("detailMobile");
-let detailMobileCalendar = document.getElementById("detailMobileCalendar");
-let listMobile = document.getElementById("listMobile");
-let fichaDetail = document.getElementById("fichaDetail");
+
 
 function openDetail() {
   if (screenWidth < 579) {
@@ -52,7 +67,7 @@ function openDetail() {
       listMobile.style.display = "block";
       plus.style.display = "none";
       minus.style.display = 'inline'
-    }    
+    }
     return;
   }
   if (detail.style.display == "block") {
@@ -68,8 +83,19 @@ function openDetail() {
 window.addEventListener("resize", function () {
   screenWidth = screen.width;
   if (screenWidth < 579) {
-    detail.style.display = "none";
+    objetivos_mobile.style.display = "block";
+    objetivos_desktop.style.display = "none";
+    anchor1.style.display = "none";
+    anchor2.style.display = "none";
+    index_title.style.display = "none";
+    index_dropdown.style.display = "block";
   } else {
+    objetivos_mobile.style.display = "none";
+    objetivos_desktop.style.display = "block";
+    anchor1.style.display = "block";
+    anchor2.style.display = "block";
+    index_title.style.display = "block";
+    index_dropdown.style.display = "none";
     listMobile.style.display = "none"
   }
 });
@@ -90,7 +116,7 @@ function openDetailMobileblock() {
   }
 }
 
-function openDetailCalendar(){
+function openDetailCalendar() {
   if (detailCalendar.style.display == "block") {
     detailCalendar.style.display = "none";
     minus.style.display = "none";
@@ -101,17 +127,28 @@ function openDetailCalendar(){
     minus.style.display = 'inline'
   }
 }
-function openDetailMobileCalendar(){
+function openDetailMobileCalendar() {
   if (detailMobileCalendar.style.display == "block") {
     detailMobileCalendar.style.display = "none";
   } else {
     detailMobileCalendar.style.display = "block";
   }
 }
-function openDetailDates(){
+function openDetailDates() {
   if (fichaDetail.style.display == "block") {
     fichaDetail.style.display = "none";
   } else {
     fichaDetail.style.display = "block";
   }
+}
+function displayList(tab) {
+  document.getElementById(tab).style.display === "none" ? document.getElementById(tab).style.display = 'block' : document.getElementById(tab).style.display = "none";
+}
+
+function goToAnchor(tab){
+  document.getElementById(tab).scrollIntoView('tab');
+}
+
+function printDocument(){
+  window.print();
 }
