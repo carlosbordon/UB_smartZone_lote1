@@ -556,12 +556,11 @@ h4,
   color: var(--c-black);
   border-block: 2px solid var(--c-grey-light);
   margin-top: var(--space-lg);
-  padding: var(--space-lg) 0;
+  padding: var(--space-lg) 0 0 0;
   position: relative;
 }
 .app_footer--container {
-  padding-left: var(--space-xl);
-  padding-right: var(--space-lg);
+  padding: 0 var(--space-xl) var(--space-lg) var(--space-lg);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -571,7 +570,6 @@ h4,
 @media (max-width: 767.98px) {
   .app_footer--container {
     flex-flow: column nowrap;
-    padding: 0px;
   }
 }
 @media (max-width: 767.98px) {
@@ -624,20 +622,9 @@ h4,
   width: auto;
 }
 .app_footer--info {
-  padding-top: 3px;
-  height: 30px;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  padding: var(--space-sm) 0;
   background-color: var(--c-grey-light);
-}
-@media (max-width: 578px) {
-  .app_footer--info {
-    height: 75px;
-    text-align: center;
-    padding: 6px;
-  }
+  text-align: center;
 }
 
 .select_lang--button {
