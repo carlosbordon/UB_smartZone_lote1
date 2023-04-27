@@ -46,7 +46,7 @@
             color: var(--c-white);
         }
 
-        @media(max-width:578px) {
+        @media(max-width:768px) {
             margin-left: var(--space-sm);
         }
     }
@@ -59,7 +59,7 @@
         height: 190px;
         width: 313px;
 
-        @media(max-width:578px) {
+        @media(max-width:768px) {
             width: 100%;
         }
 
