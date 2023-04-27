@@ -29,14 +29,12 @@
     }
 
     &--center {
-        width: 60%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 
     &--right {
-        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;

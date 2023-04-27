@@ -9,9 +9,7 @@
             font-weight: bold;
             text-transform: uppercase;
             padding: var(--space-md);
-            @media (max-width:578px){
-                margin-left: var(--space-lg);
-            }
+
             &:after {
                 display: none;
             }
