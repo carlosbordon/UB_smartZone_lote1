@@ -22,6 +22,7 @@
   --c-tertiary-1-rgba: 55, 88, 102;
   --c-tertiary-2: #754861;
   --c-tertiary-2-rgba: 117, 72, 97;
+  --c-purple: purple;
   --c-accent: var(--c-orange);
   --c-accent-light: var(--c-orange-light);
   --c-accent-dark: var(--c-orange-dark);
