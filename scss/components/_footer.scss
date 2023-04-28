@@ -60,7 +60,7 @@
             text-decoration: none;
             border: none;
         }
-        @media (max-width:578px){
+        @media (max-width:768px){
             flex-flow: row;
             gap:10px 0px;
             li{
@@ -78,6 +78,13 @@
     &--info {
         padding: var(--space-sm) 0;
         background-color: var(--c-grey-light);
-        text-align: center;
+
+
+        @media (max-width:768px) {
+            height: 75px;
+            text-align: center;
+            padding: 6px;
+        }
+
     }
 }

@@ -10,6 +10,10 @@
             text-transform: uppercase;
             padding: var(--space-md);
 
+            @media (max-width:768px){
+                margin-left: var(--space-lg);
+            }
+
             &:after {
                 display: none;
             }

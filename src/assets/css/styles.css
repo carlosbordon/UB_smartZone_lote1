@@ -131,12 +131,12 @@ h4,
   display: none;
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .hidden-mobile {
     display: none;
   }
 }
-@media (min-width: 578px) {
+@media (min-width: 768px) {
   .hidden-web {
     display: none;
   }
@@ -173,6 +173,19 @@ h4,
 .separator {
   border-bottom: thin solid #ccc;
   padding-bottom: var(--space-md);
+}
+
+.card-header {
+  background-color: var(--c-white);
+  color: var(--c-orange);
+}
+
+.color-black {
+  color: var(--c-black);
+}
+
+.card-m {
+  max-width: 25rem;
 }
 
 .bg-block {
@@ -215,7 +228,7 @@ h4,
   background-color: var(--c-white);
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .sticky {
     position: relative;
   }
@@ -337,7 +350,7 @@ h4,
   height: 54px;
   width: 30%;
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .table--info td:nth-child(even) {
     text-align: center;
   }
@@ -390,7 +403,7 @@ h4,
   flex-flow: row wrap;
   justify-content: space-between;
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .app_nav .app_nav--content {
     display: flex;
     flex-flow: row;
@@ -424,10 +437,19 @@ h4,
   border-radius: 4px;
   margin-right: 8px;
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .button--orange {
     width: 100%;
   }
+}
+.button--print {
+  color: var(--c-accent);
+  background: #FFFFFF;
+  border: 1px solid var(--c-accent);
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-left: 39rem;
+  max-height: 2rem;
 }
 
 .list {
@@ -494,7 +516,7 @@ h4,
   font-size: var(--f-size-xs);
   color: var(--c-white);
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .box--orange {
     margin-left: var(--space-sm);
   }
@@ -507,7 +529,7 @@ h4,
   height: 190px;
   width: 313px;
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .box--groups {
     width: 100%;
   }
@@ -536,6 +558,9 @@ h4,
 .box--calendar--detail h6 {
   margin-top: var(--space-sm);
   margin-bottom: var(--space-sm);
+}
+.box--info {
+  border-color: var(--c-accent);
 }
 .box--fichaDetail {
   display: none;
@@ -607,7 +632,7 @@ h4,
   text-decoration: none;
   border: none;
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .app_footer--links {
     flex-flow: row;
     gap: 10px 0px;
@@ -624,6 +649,14 @@ h4,
 .app_footer--info {
   padding: var(--space-sm) 0;
   background-color: var(--c-grey-light);
+
+}
+@media (max-width: 768px) {
+  .app_footer--info {
+    height: 75px;
+    text-align: center;
+    padding: 6px;
+
   text-align: center;
 }
 
@@ -635,6 +668,13 @@ h4,
   text-transform: uppercase;
   padding: var(--space-md);
 }
+
+@media (max-width: 768px) {
+  .select_lang--button {
+    margin-left: var(--space-lg);
+  }
+}
+
 .select_lang--button:after {
   display: none;
 }
