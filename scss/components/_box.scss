@@ -1,8 +1,14 @@
 .box {
     &--selects {
-        height: 104px;
         background-color: var(--c-grey-light);
-        display: flex;
+
+        &--content {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            gap: var(--space-lg);
+            padding: var(--space-lg) 0;
+        }
     }
 
 

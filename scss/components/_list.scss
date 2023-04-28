@@ -4,6 +4,12 @@
 
     li {
         padding-top: var(--space-lg);
+
+        h4 {
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 
 
