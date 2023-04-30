@@ -33,11 +33,11 @@
 
 <body>
 
-    <div>
+    <div class="sticky">
 
-        <header id="appHeader" role="banner" class="app_header container-fluid ruler_bottom ruler_accent sticky ">
-
+        <header id="appHeader" role="banner" class="app_header container-fluid">
             <div class="app_header--container container">
+
                 <div class="app_header--item app_header--left">
                     <a href="#" class="app_header--logo">
                         <img src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
@@ -47,37 +47,50 @@
 
                 <div class="app_header--item app_header--right">
 
-                    <ul class="app_header--links">
-                        <li class="app_header--link">
-                            <div class="dropdown select_lang">
-                                <button class="select_lang--button dropdown-toggle" type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    CA <i data-feather="chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#" title="Español">ES</a></li>
-                                    <li><a class="dropdown-item" href="#" title="English">EN</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="app_header--movil">
+                        <a href="#" class="app_header--logo-movil">
+                            <img src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
+                                title="Logo Universitat de Barcelona" alt="Logo Universitat de Barcelona">
+                        </a>
+
+                        <ul class="app_header--links">
+
+                            <li class="app_header--link">
+                                <div class="dropdown select_lang">
+                                    <button class="select_lang--button dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        CA <i data-feather="chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" title="Español">ES</a></li>
+                                        <li><a class="dropdown-item" href="#" title="English">EN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
 
                     <div class="app_header--content">
                         <h2 class="app_header--title">
-                            Plan Docente </h2>
+                            Plan docente</h2>
                     </div>
                 </div>
-
+            </div>
         </header>
-
         <nav id="appNav" class="app_nav container-fluid">
             <div class="container app_nav--content">
-                <span class="bold">FACULTAD DE ECONOMIA Y EMPRESA</span>
-                <span role="heading">Curso 2022/2023</span>
+                <div class="app_nav--content-left"></div>
+                <div class="app_nav--content-right">
+                    <span class="bold">FACULTAD DE ECONOMIA Y EMPRESA</span>
+                    <span role="heading">Curso 2022/2023</span>
+                </div>
             </div>
         </nav>
+
     </div>
-    <!--Titulo de asignatura y navegacion por anclas-->
+    
+
     <main id="appMain" class="app_main">
         <div class="container-fluid separator">
             <div class="container">
@@ -843,7 +856,8 @@
     </main>
 
 
-    <footer class="app_footer container-fluid">
+    <footer class="app_footer">
+
         <div class="container app_footer--container">
             <div class="app_footer--left">
                 <img class="app_footer--logo"
@@ -858,12 +872,18 @@
                     <li><a href="#" target="_blank">Contacto</a></li>
                 </ul>
             </div>
-            <div>Universidad de Barcelona</div>
+            <div class="app_footer--right">
+                <span>© Universidad de Barcelona</span>
+            </div>
         </div>
-    </footer>
-    <div class="app_footer--info">Area de Tecnologias de la Información y la comunicación - Aplicaciones - Proyectos de gestión académica</div>
 
-    <button onclick="topFunction()" id="toTop" title="subir" class="totop"><i data-feather="chevron-up"></i></button>
+        <div class="app_footer--info">
+            <div class="container">
+                Area de Tecnologias de la Información y la comunicación - Aplicaciones - Proyectos de gestión académica
+            </div>
+        </div>
+        <button onclick="topFunction()" id="toTop" title="subir" class="totop"><i data-feather="chevron-up"></i></button>
+    </footer>    
 
 
 </body>

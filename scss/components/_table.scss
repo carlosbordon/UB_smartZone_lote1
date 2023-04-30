@@ -2,10 +2,10 @@
     &--info {
         border-collapse: collapse;
         width: 100%;
-        border-top: 0.5px solid var(--c-grey-light);
+        border-top: 0.5px solid var(--c-gray-medium);
 
         td {
-            border-bottom: 1px solid var(--c-grey-light);
+            border-bottom: 1px solid var(--c-gray-medium);
             text-align: left;
             padding: 8px;
             height: 54px;
@@ -34,12 +34,12 @@
         }
 
         tr {
-            border: 1px solid var(--c-grey-light);
+            border: 1px solid var(--c-gray-medium);
         }
 
         tr:nth-child(odd),
         th {
-            background-color: var(--c-grey-light);
+            background-color: var(--c-gray-medium);
         }
 
         &--mobile {
@@ -49,7 +49,7 @@
                 padding: 8px;
             }
             tr {
-                border: 1px solid var(--c-grey-light);
+                border: 1px solid var(--c-gray-medium);
                 height: 55px;
             }
             h5{

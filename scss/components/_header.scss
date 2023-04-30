@@ -1,8 +1,8 @@
 .app_header {
     background-color: var(--c-white);
-    //padding: var(--space-md);
     z-index: 99;
     width: 100%;
+    border-bottom: 6px solid var(--c-accent);
 
 
     &--container {
@@ -57,7 +57,7 @@
     }
 
     &--content {
-        border-top: thin solid var(--c-grey-light);
+        border-top: thin solid var(--c-gray-medium);
         padding: var(--space-lg) 0;
     }
 
@@ -74,11 +74,18 @@
             @media (max-width: 576px) {
                 max-width: 160px;
             }
-        }        
+        }
+
+        &-movil {
+            display: none;
+        }
+        
+        
     }
 
     &--title {
-        font-size: clamp(1.13rem, calc(0.51rem + 3.07vw), 2.81rem);
+        //font-size: clamp(1.13rem, calc(0.51rem + 3.07vw), 2.81rem);
+        font-size: var(--f-size-h1);
         font-weight: bold;
         color: var(--c-dark);
         margin: 0;    
@@ -121,3 +128,70 @@
     }
     
 }
+
+
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {
+    .app_header {
+        border-bottom-width: 1px;
+
+        &.container-fluid,
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &--container {
+            &.container {
+                width: 100%;
+                max-width: inherit;
+            }
+        }
+
+        &--left {
+            display: none;
+        }
+
+        &--title  {
+            font-size: var(--f-size-h3);
+        }
+        &--content {
+            padding: var(--space-sm);
+            border-top: 6px solid var(--c-accent);
+        }
+
+        &--logo {
+
+            &-movil {
+                display: block;
+                border: none;
+                padding: 0 var(--space-md);
+
+
+                img {
+                    height: 34px;
+                }
+            }
+        }
+
+        &--movil {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            gap: var(--space-md);
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .app_header {
+        
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) { }

@@ -116,7 +116,7 @@
     &_color {
 
         &--light {
-            background-color: rgba(var(--c-primary-1-rgba), .1);
+            background-color: var(--accent-light);
         }
     }
 }

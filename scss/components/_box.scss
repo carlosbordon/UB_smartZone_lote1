@@ -1,7 +1,7 @@
 .box {
     &--selects {
         height: 104px;
-        background-color: var(--c-grey-light);
+        background-color: var(--c-gray-medium);
         display: flex;
     }
 
@@ -70,7 +70,7 @@
     }
 
     &--courses {
-        border: solid 1px var(--c-grey-light);
+        border: solid 1px var(--c-gray-medium);
         height: 70px;
 
         h4 {
@@ -103,7 +103,7 @@
     
     &--fichaDetail {
         display: none;
-        border: solid 1px var(--c-grey-light);
+        border: solid 1px var(--c-gray-medium);
 
         h4 {
             color: var(--c-accent);

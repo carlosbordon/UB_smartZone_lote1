@@ -2,38 +2,24 @@
 
     // Basics colors
     --c-black: #000;
-    --c-grey-dark: #222222;
-    --c-grey-medium: #646464;
-    --c-grey-light: #ebebeb;
+    --c-gray-dark: #cccccc;
+    --c-gray-medium: #ebebeb;
+    --c-gray-soft: #f8f9fa;
     --c-white: #fff;
 
     /* UB Color Palette */
 
     --c-blue: #0072ce;
-    --c-blue-light: #cbe8ff;
-    --c-blue-dark: #0364b2;
     --c-blue-rgba: 0,114,206;
     --c-blue-hsl: 207, 100%, 40%;
+    --c-blue-light: #cbe8ff;
+    --c-blue-dark: #0364b2;
 
-    
     --c-orange: #ff6200;
-    --c-orange-light: #ffd6bd;
-    --c-orange-dark: #e25903;
     --c-orange-rgba: 171, 171, 171;
     --c-orange-hsl: 23, 100%, 50%;
-
-
-    --c-green: #869130;
-    --c-grenn-rgba: 134,145,48;
-    --c-grenn-hsl: 67, 50%, 38%;
-
-    --c-tertiary-1: #335866;
-    --c-tertiary-1-rgba: 55, 88, 102;
-
-    --c-tertiary-2: #754861;
-    --c-tertiary-2-rgba: 117, 72, 97;
-
-    --c-purple: purple;
+    --c-orange-light: #ffd6bd;
+    --c-orange-dark: #e25903;
 
 
     // Accent color
@@ -41,7 +27,15 @@
     --c-accent-light: var(--c-orange-light);
     --c-accent-dark: var(--c-orange-dark);
 
+
+    //Auxiliar colors
+    --c-red: #c11717;
+    --c-red-rgba: 0,79,142;
+    --c-green: #008000;
+    --c-green-rgba: 120,100,25;
+
     // Spaces
+    --space-xs: .25em;
     --space-sm: .5em;
     --space-md: 1em;
     --space-lg: 2em;
@@ -52,11 +46,14 @@
     --f-size-md: 16px;
     --f-size-lg: 18px;
     --f-size-xl: 28px;
+    --f-size-xxl: 60px;
 
-    --f-size-h1: 60px;
-    --f-size-h2: 45px;
-    --f-size-h3: 36px;
+    --f-size-h1: 45px;
+    --f-size-h2: 36px;
+    --f-size-h3: 24px;
     --f-size-h4: 22px;
+    --f-size-h5: 18px;
+    --f-size-h6: 16px;
 
 
     --bs-font-sans-serif: 'Roboto', sans-serif;

@@ -1,55 +1,28 @@
 .app_footer {
     color: var(--c-black);
-    border-block: 2px solid var(--c-grey-light);
+    border-top: 2px solid var(--c-gray-medium);
     margin-top: var(--space-lg);
-    padding: var(--space-lg) 0;
     position: relative;
 
- 
 
     &--container {
-        padding-left: var(--space-xl);
-        padding-right: var(--space-lg);
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
         gap: var(--space-lg);
-
-        @media (max-width: 767.98px) {
-            flex-flow: column nowrap;
-            padding: 0px;
-        }
+        padding: var(--space-lg) 0;
     }
 
-    &--left {
-        @media (max-width: 767.98px) {
-            display: none;
-        }
-    }
+    &--left {}
 
     &--center {
-        width: 60%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 
-    &--right {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end;
-
-        @media (max-width: 767.98px) {
-            justify-content: center;
-        }
-
-        &.last {
-            background-color: var(--c-grey-medium);
-        }
-
-    }
+    &--right {}
 
 
     &--links {
@@ -64,14 +37,7 @@
             text-decoration: none;
             border: none;
         }
-        @media (max-width:768px){
-            flex-flow: row;
-            gap:10px 0px;
-            li{
-                width: 120px;
-                text-align: center;
-            }
-        }
+
     }
 
     &--logo {
@@ -80,18 +46,27 @@
     }
 
     &--info {
-        padding-top: 3px;
-        height: 30px;
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        background-color: var(--c-grey-light);
+        background-color: var(--c-gray-medium);
+        text-align: center;
+        padding: var(--space-sm) 0;
+        font-size: var(--f-size-sm);
+    }
+}
 
-        @media (max-width:768px) {
-            height: 75px;
-            text-align: center;
-            padding: 6px;
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {
+    .app_footer {
+        &--container {
+            justify-content: center;
+            flex-direction: column;
+            gap: var(--space-md);
         }
     }
 }
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}
