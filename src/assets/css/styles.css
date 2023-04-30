@@ -531,9 +531,13 @@ h4,
 }
 
 .box--selects {
-  height: 104px;
   background-color: var(--c-gray-medium);
+  padding: var(--space-lg) 0;
+}
+.box--selects-container {
   display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-sm) var(--space-lg);
 }
 .box--radioButtons {
   font-family: var(--bs-font-sans-serif);
@@ -684,11 +688,6 @@ h4,
   font-weight: bold;
   text-transform: uppercase;
   padding: var(--space-md);
-}
-@media (max-width: 768px) {
-  .select_lang--button {
-    margin-left: var(--space-lg);
-  }
 }
 .select_lang--button:after {
   display: none;

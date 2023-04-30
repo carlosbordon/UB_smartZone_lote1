@@ -1,16 +1,19 @@
 .box {
     &--selects {
-        height: 104px;
         background-color: var(--c-gray-medium);
-        display: flex;
+        padding: var(--space-lg) 0;
+
+        &-container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: var(--space-sm) var(--space-lg);
+        }
     }
 
 
     &--radioButtons {
         font-family: var(--bs-font-sans-serif);
-        display: flex;
-
-      
+        display: flex;      
     }
 
     &-shadow {
