@@ -126,98 +126,100 @@
             </div>
         </div>
         
-        <div class="container">
-            <ul class="list">
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><div id="minus" class="minus"><i data-feather="minus"
-                        onclick="openDetailCalendar()"></i></div><div id="plus" class="plus"><i data-feather="plus"  onclick="openDetailCalendar()"></i></div> 05 Enero 2023</h4>
-                </li>
-                <div class="list--detail hidden" id="detailCalendar">
+        <section class="container-fluid">
+            <div class="container">
+                <ul class="accordion mt-5">
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><div id="minus" class="minus"><i data-feather="minus"
+                            onclick="openDetailCalendar()"></i></div><div id="plus" class="plus"><i data-feather="plus"  onclick="openDetailCalendar()"></i></div> 05 Enero 2023</h4>
+                    </li>
+                    <div class="list--detail hidden" id="detailCalendar">
 
-                    <table class="table--full mt-4 hidden-mobile">
-                        <tr>
-                            <th>Asignatura</th>
-                            <th>Horario</th>
-                            <th>A1</th>
-                            <th>Aula</th>
-                            <th>Observaciones</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td class="bold">Evaluación del impacto ambiental(1)</td>
-                            <td>08:00-10:00</td>
-                            <td>Primero</td>
-                            <td class="underline">B35</td>
-                            <td>Grups cT1 i cT2 discussió dades sortida de camp</td>
-                            <td class="text-center"><button class="button--orange">Ficha</button></td>
-                        </tr>
-                        <tr>
-                            <td class="bold">Química General(1)</td>
-                            <td>13:00-15:00</td>
-                            <td>B7</td>
-                            <td class="underline">M3</td>
-                            <td></td>
-                            <td class="text-center"><button class="button--orange">Ficha</button></td>
-                        </tr>
-                        <tr>
-                            <td class="bold">Fisiología vegetal animal(1)</td>
-                            <td>18:00-19:00</td>
-                            <td>B35</td>
-                            <td class="underline">Z4</td>
-                            <td>Grups cT1 i cT2 discussió dades sortida de camp</td>
-                            <td class="text-center"><button class="button--orange">Ficha</button></td>
-                        </tr>
-                    </table>
+                        <table class="table--full mt-4 hidden-mobile">
+                            <tr>
+                                <th>Asignatura</th>
+                                <th>Horario</th>
+                                <th>A1</th>
+                                <th>Aula</th>
+                                <th>Observaciones</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td class="bold">Evaluación del impacto ambiental(1)</td>
+                                <td>08:00-10:00</td>
+                                <td>Primero</td>
+                                <td class="underline">B35</td>
+                                <td>Grups cT1 i cT2 discussió dades sortida de camp</td>
+                                <td class="text-center"><button class="button--orange">Ficha</button></td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Química General(1)</td>
+                                <td>13:00-15:00</td>
+                                <td>B7</td>
+                                <td class="underline">M3</td>
+                                <td></td>
+                                <td class="text-center"><button class="button--orange">Ficha</button></td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Fisiología vegetal animal(1)</td>
+                                <td>18:00-19:00</td>
+                                <td>B35</td>
+                                <td class="underline">Z4</td>
+                                <td>Grups cT1 i cT2 discussió dades sortida de camp</td>
+                                <td class="text-center"><button class="button--orange">Ficha</button></td>
+                            </tr>
+                        </table>
 
-                    <div class="hidden-web">
-                        <div class="box--calendar border mt-3 " onclick="openDetailMobileCalendar()">
-                            <h4 class="mt-3 ms-3 bold" >Evaluación del impacto ambiental(1)</h4>
-                        </div>
-                        <div class="box--calendar--detail border hidden" id="detailMobileCalendar">
-                            <div class="mt-3 ms-3 mb-3 me-3">
-                            <h5>Tipo</h5>
-                            <h6>Formacion básica</h6>
-                            <h5>semestres</h5>
-                            <h6>Primero</h6>
-                            <h5>Creditos</h5>
-                            <h6>6</h6> 
-                            <button class="button--orange">Ficha</button>
-                        </div>
-                        </div>
-                        <div class="box--calendar border" >
-                            <h4 class="mt-4 ms-3 bold" >Química General(1)</h4>
-                        </div>
-                        <div class="box--calendar border" >
-                            <h4 class="mt-4 ms-3 bold" >Fisiología vegetal animal(1)</h4>
+                        <div class="hidden-web">
+                            <div class="box--calendar border mt-3 " onclick="openDetailMobileCalendar()">
+                                <h4 class="mt-3 ms-3 bold" >Evaluación del impacto ambiental(1)</h4>
+                            </div>
+                            <div class="box--calendar--detail border hidden" id="detailMobileCalendar">
+                                <div class="mt-3 ms-3 mb-3 me-3">
+                                <h5>Tipo</h5>
+                                <h6>Formacion básica</h6>
+                                <h5>semestres</h5>
+                                <h6>Primero</h6>
+                                <h5>Creditos</h5>
+                                <h6>6</h6> 
+                                <button class="button--orange">Ficha</button>
+                            </div>
+                            </div>
+                            <div class="box--calendar border" >
+                                <h4 class="mt-4 ms-3 bold" >Química General(1)</h4>
+                            </div>
+                            <div class="box--calendar border" >
+                                <h4 class="mt-4 ms-3 bold" >Fisiología vegetal animal(1)</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
-                            id="minus" class="minus" onclick="openDetail()"></i> 07 Enero 2023</h4>
-                </li>
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
-                            id="minus" class="minus" onclick="openDetail()"></i> 10 Enero 2023</h4>
-                </li>
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
-                            id="minus" class="minus" onclick="openDetail()"></i> 13 Enero 2023</h4>
-                </li>
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
-                            id="minus" class="minus" onclick="openDetail()"></i> 15 Enero 2023</h4>
-                </li>
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
-                            id="minus" class="minus" onclick="openDetail()"></i> 20 Enero 2023</h4>
-                </li>
-                <li class="ruler_bottom--small ruler_accent">
-                    <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
-                            id="minus" class="minus" onclick="openDetail()"></i> 25 Enero 2023</h4>
-                </li>
-            </ul>
-        </div>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                                id="minus" class="minus" onclick="openDetail()"></i> 07 Enero 2023</h4>
+                    </li>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                                id="minus" class="minus" onclick="openDetail()"></i> 10 Enero 2023</h4>
+                    </li>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                                id="minus" class="minus" onclick="openDetail()"></i> 13 Enero 2023</h4>
+                    </li>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                                id="minus" class="minus" onclick="openDetail()"></i> 15 Enero 2023</h4>
+                    </li>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                                id="minus" class="minus" onclick="openDetail()"></i> 20 Enero 2023</h4>
+                    </li>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i data-feather="minus"
+                                id="minus" class="minus" onclick="openDetail()"></i> 25 Enero 2023</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     </main>
 
