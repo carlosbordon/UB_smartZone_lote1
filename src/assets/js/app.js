@@ -1,17 +1,17 @@
 
 // Header hidden
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("sticky").style.top = "0";
-  } else {
-    document.getElementById("sticky").style.top = "-500px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
+$(document).ready(function(){
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function () {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+		document.getElementById("sticky").style.top = "0";
+	  } else {
+		document.getElementById("sticky").style.top = "-500px";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+});
 
 // Totop
 
@@ -31,7 +31,6 @@ $(document).ready(function(){
 			return false;
 		});
 });
-
 
 
 //VARIABLES
