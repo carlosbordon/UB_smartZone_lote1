@@ -92,14 +92,17 @@
     
 
     <main id="appMain" class="app_main">
-        <div class="container-fluid separator">
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container">
-                <div class="d-flex">
-                    <h2 class="app_main--title">
+
+                <div class="d-flex justify-content-between">
+                    <h2 class="h2">
                         Historia económica mundial
                     </h2>
                     <button class="button--print p-1 mt-3 hidden-mobile"  onclick="printDocument()">Imprimir</button>
                 </div>
+
                 <div class="ml-2 hidden-mobile" id="index-title">
                     <b>Index</b>
                 </div>
@@ -206,12 +209,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!--Contenido de cada sección separado para poder usar anclas desde el index-->
-        <div class="container-fluid separator">
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="Datos_generales">
-                <h3 class="app_main--title">
+                <h3 class="h3 mb-4">
                     Datos generales
                 </h3>
                 <table class="table--info" id="table-datos-generales">
@@ -245,8 +248,9 @@
                     </tr>
                 </table>
             </div>
-        </div>
-        <div class="container-fluid separator hidden-mobile">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray hidden-mobile">
             <div class="container" id="Horas_estimadas">
                 <h3 class="app_main--title">
                     Horas estimadas de dedicación
@@ -287,8 +291,9 @@
                     </tr>
                 </table>
             </div>
-        </div>
-        <div class="container-fluid hidden-web">
+        </section>
+        
+        <section class="container-fluid hidden-web">
             <h3 class="app_main--title">
                 Horas estimadas de dedicación
             </h3>
@@ -390,8 +395,9 @@
                     <tr></tr>
                 </table>
             </div>
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="Recomendaciones">
                 <h3 class="app_main--title">
                     Recomendaciones
@@ -414,8 +420,9 @@
                     para adquirir y depurar.
                 </p>
             </div>
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="Competencias">
                 <h3 class="app_main--title">
                     Competencias que se desarrollan
@@ -477,13 +484,14 @@
                 </ul>
             </div>
 
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container hidden-mobile" id="Objetivos_desktop">
-                <h3 class="app_main--title">
+                <h3 class="h3 mb-4">
                     Objetivos de aprendizaje
                 </h3>
-                <div class="d-inline-flex">
+                <div class="d-flex justify-content-between">
                     <div class="card card-m m-2">
                         <div class="card-header header-background text-center ruler_bottom--small ruler_accent">
                             <h4>Conocimientos</h4>
@@ -589,11 +597,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="Bloques">
-                <h3 class="app_main--title">Bloques temáticos</h3>
-                <ul class="list">
+                <h3 class="h3 mb-5">Bloques temáticos</h3>
+                <ul class="accordion">
                     <li class="ruler_bottom--small ruler_accent">
                         <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i
                                 data-feather="minus" id="minus" class="minus" onclick="openDetail()"></i>1. La Gran
@@ -638,8 +647,9 @@
                 </ul>
             </div>
 
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="Metodologia">
                 <h3 class="app_main--title">Metodología y actividades formativas</h3>
                 <p>La modalidad docente de esta asignatura invluye actividades dirigidas a tutorización. El curso
@@ -679,8 +689,9 @@
                     Campus virtual en el inicio de curso.
                 </p>
             </div>
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="Evaluacion">
                 <h3 class="app_main--title">Evaluación acreditativa de los aprendizajes</h3>
                 <p>
@@ -747,8 +758,9 @@
                     al proyecto.
                 </p>
             </div>
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
             <div class="container" id="evaluaciones">
                 <h3 class="app_main--title">Evaluación acreditativa de los aprendizajes</h3>
                 <p>
@@ -780,8 +792,9 @@
                     al proyecto.
                 </p>
             </div>
-        </div>
-        <div class="container-fluid separator">
+        </section>
+
+        <section class="container-fluid">
             <div class="container" id="Fuentes">
                 <h3 class="app_main--title">Fuentes de información básica</h3>
                 <div class="pt-3">
@@ -852,7 +865,8 @@
                     <b>Revisado por los Servicios Lingüísticos de la UB</b>
                 </div>
             </div>
-        </div>
+        </section>
+
     </main>
 
 
