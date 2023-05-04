@@ -651,10 +651,6 @@ h4,
   overflow: hidden;
   white-space: nowrap;
 }
-.card -header {
-  background-color: var(--c-white);
-  color: var(--c-orange);
-}
 .card_list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(calc(100%/3 - 16px), 1fr));

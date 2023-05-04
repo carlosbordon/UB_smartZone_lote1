@@ -10,12 +10,9 @@
             overflow: hidden;
             white-space: nowrap;
         }
+
     }
     
-    -header {
-    background-color: var(--c-white);
-    color: var(--c-orange);
-  }
 
     &_list {
         display: grid;
