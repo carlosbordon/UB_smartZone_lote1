@@ -177,24 +177,6 @@ h4,
   padding-bottom: var(--space-md);
 }
 
-.card-header {
-  background-color: var(--c-white);
-  color: var(--c-orange);
-}
-
-.color-black {
-  color: var(--c-black);
-}
-
-.card-m {
-  max-width: 25rem;
-}
-
-.bg-block {
-  background-color: var(--accent-light);
-  padding: var(--space-md);
-}
-
 .gap-md {
   gap: var(--space-md);
 }
@@ -660,6 +642,41 @@ h4,
   margin-bottom: var(--space-sm);
 }
 
+.card-header {
+  background-color: var(--c-white);
+  color: var(--c-orange);
+}
+.card-header h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card -header {
+  background-color: var(--c-white);
+  color: var(--c-orange);
+}
+.card_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100%/3 - 16px), 1fr));
+  align-self: center;
+  gap: var(--space-md);
+}
+
+.bg-block {
+  background-color: var(--accent-light);
+  padding: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .card_list {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 992px) {
+  .card_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .app_footer {
   color: var(--c-black);
   border-top: 2px solid var(--c-gray-medium);
