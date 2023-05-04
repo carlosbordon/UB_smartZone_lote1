@@ -1,5 +1,13 @@
 .card {
 
+    &_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(#{100% / 3} - 16px), 1fr));
+        //grid-template-columns: repeat(3, 1fr);
+        align-self: center;
+        gap: var(--space-md)
+    }
+
     &-header {
         background-color: var(--c-white);
         color: var(--c-orange);
@@ -12,25 +20,16 @@
         }
 
     }
-    
 
-    &_list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(calc(#{100% / 3} - 16px), 1fr));
-        //grid-template-columns: repeat(3, 1fr);
-        align-self: center;
-        gap: var(--space-md)
+    &-body {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
     }
-}
 
-
-
-.bg {
-
-    &-block {
-        background-color: var(--accent-light);
-        padding: var(--space-md);
-    }
 }
 
 @media (max-width: 576px) {}
@@ -53,5 +52,4 @@
 
 
 @media (max-width: 1200px) {}
-
 @media (max-width: 1400px) {}

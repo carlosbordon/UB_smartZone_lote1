@@ -642,6 +642,12 @@ h4,
   margin-bottom: var(--space-sm);
 }
 
+.card_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100%/3 - 16px), 1fr));
+  align-self: center;
+  gap: var(--space-md);
+}
 .card-header {
   background-color: var(--c-white);
   color: var(--c-orange);
@@ -651,16 +657,10 @@ h4,
   overflow: hidden;
   white-space: nowrap;
 }
-.card_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(100%/3 - 16px), 1fr));
-  align-self: center;
-  gap: var(--space-md);
-}
-
-.bg-block {
-  background-color: var(--accent-light);
-  padding: var(--space-md);
+.card-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 @media (max-width: 768px) {
