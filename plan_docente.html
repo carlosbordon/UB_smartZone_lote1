@@ -604,11 +604,11 @@
                 <h3 class="h3 mb-4">Bloques temáticos</h3>
                 <ul class="accordion">
                     <li class="ruler_bottom--small ruler_accent">
-                        <h4><i data-feather="plus" id="plus" class="plus" onclick="openDetail()"></i><i
-                                data-feather="minus" id="minus" class="minus" onclick="openDetail()"></i>1. La Gran
-                            Divergencia</h4>
+                        
+                            <h4><div id="minus" class="minus"><i data-feather="minus"
+                                onclick="openDetailPlan()"></i></div><div id="plus" class="plus"><i data-feather="plus"  onclick="openDetailPlan()"></i></div> 1. La Gran Divergencia</h4>
                     </li>
-                    <div id="detail" class="container descriptive">
+                    <div id="detailPlan" class="container descriptive hidden">
                         <p>1.1 La evolución de la economía mundial en el largo plazo y los orígenes de la Gran
                             Divergencia</p>
                         <p>1.2 Demogracía y regímenes demográficos durante la época preindustrial: Malthus y la Gran
@@ -802,11 +802,13 @@
                 </div>
                 <div class="card box--info mt-3">
                     <div class="card-header color-black d-flex bg_color--light">
+                        <div class="w-flex" style="max-width: 100%; height: 100%;">
                         <div class="box--orange"><span>Libro</span></div>
                         <div class="pl-4">
-                            <h4 class="color-black ms-4" >Allen, RobertC, (2011), Global Economic History. A very Short
+                            <h4 class="ms-4" >Allen, RobertC, (2011), Global Economic History. A very Short
                                 Introduction.
                                 Oxford University Press</h4>
+                        </div>
                         </div>
                     </div>
                     <div class="card-body">
@@ -834,9 +836,11 @@
                 </div>
                 <div class="card box--info mt-3">
                     <div class="card-header color-black d-flex bg_color--light border-bottom-1">
+                        <div class="w-flex" style="max-width: 100%; height: 100%;">
                         <div class="box--orange"><span>Legislación</span></div>
-                        <div class="pl-4">
-                            <h4 class="color-black ms-4">Legislación catalana</h4>
+                        <div class="pl-4" style="display: block;">
+                           <h4 class="color-black ms-4">Legislación catalana</h4>
+                        </div>
                         </div>
                     </div>
                     <div class="card-body">

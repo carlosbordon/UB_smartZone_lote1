@@ -15,13 +15,9 @@
     }
 }
 
-
-    .hidden-web {
-        display: none;
-    }
-
-
-
+.hidden-web {
+    display: none;
+}
 
 .bold {
     font-weight: bold;
@@ -29,6 +25,16 @@
 
 .flex {
     display: flex;
+}
+
+.w-flex {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .w-flex {
+        display: block;
+    }
 }
 
 .space-between {
@@ -96,7 +102,7 @@
 }
 
 .bg {
-    
+
     &-block {
         background-color: rgba(#0072ce, .1);
         padding: var(--space-md);
@@ -117,6 +123,7 @@
         }
     }
 }
+
 
 .section {
 

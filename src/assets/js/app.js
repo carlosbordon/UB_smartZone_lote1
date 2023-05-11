@@ -36,6 +36,7 @@ $(document).ready(function(){
 //VARIABLES
 let screenWidth = screen.width
 let detail = document.getElementById("detail");
+let detailPlan = document.getElementById("detailPlan");
 let detailCalendar = document.getElementById("detailCalendar");
 let plus = document.getElementById("plus");
 let minus = document.getElementById("minus");
@@ -77,6 +78,18 @@ function openDetail() {
     plus.style.display = 'inline'
   } else {
     detail.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = 'inline'
+  }
+}
+
+function openDetailPlan(){
+  if (detailPlan.style.display == "block") {
+    detailPlan.style.display = "none";
+    minus.style.display = "none";
+    plus.style.display = 'inline'
+  } else {
+    detailPlan.style.display = "block";
     plus.style.display = "none";
     minus.style.display = 'inline'
   }
