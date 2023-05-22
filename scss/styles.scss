@@ -8,24 +8,24 @@
     --c-white: #fff;
 
     /* UB Color Palette */
-
     --c-blue: #0072ce;
     --c-blue-rgba: 0,114,206;
-    --c-blue-hsl: 207, 100%, 40%;
-    --c-blue-light: #cbe8ff;
-    --c-blue-dark: #0364b2;
+    --c-blue-dark: #0067ba;
+    --c-blue-light: #bae0ff;
+    --c-blue-soft: #e2f2ff;
 
     --c-orange: #ff6200;
-    --c-orange-rgba: 171, 171, 171;
-    --c-orange-hsl: 23, 100%, 50%;
-    --c-orange-light: #ffd6bd;
-    --c-orange-dark: #e25903;
+    --c-orange-rgba: 23,100,50;
+    --c-orange-dark: #c44b00;
+    --c-orange-light: #ffcfb1;
+    --c-orange-soft: #fff3eb;
 
 
-    // Accent color
+    // Actions colors
     --c-accent: var(--c-orange);
-    --c-accent-light: var(--c-orange-light);
     --c-accent-dark: var(--c-orange-dark);
+    --c-accent-light: var(--c-orange-light);
+    --c-accent-soft: var(--c-orange-soft);
 
 
     //Auxiliar colors
